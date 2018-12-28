@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ogo_b.mqttpublisher.MainActivity">
+    <Button
+        android:id="@+id/btnRetreivingCredetnials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acquire data retreiving token"/>
+    <Button
+        android:id="@+id/btnProcessingCredetnials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acquire processing token"
+        android:layout_below="@id/btnRetreivingCredetnials"/>
+    <Button
+        android:id="@+id/btnSendCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acquire storing token"
+        android:layout_below="@id/btnProcessingCredetnials"/>
+    <Button
+        android:id="@+id/btnSendTokenResourceServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to resource server"
+        android:layout_below="@id/btnSendCredentials"/>
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data"
+        android:layout_below="@id/btnSendTokenResourceServer"/>
+    <Button
+        android:id="@+id/btnStopSendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop data sending"
+        android:layout_below="@id/btnSendData"/>
+    <Button
+        android:id="@+id/btnChangeToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change token"
+        android:layout_below="@id/btnStopSendData"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnCertificate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Request Certificate"/>-->
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="enter clientId"-->
+        <!--android:text="@string/clientId"-->
+        <!--android:id="@+id/txtClientId"-->
+        <!--android:layout_below="@id/btnCertificate"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/btnChangeClientId"-->
+        <!--android:layout_below="@id/txtClientId"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Change client id"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/btnRequestPublicKey"-->
+        <!--android:text="@string/btnRequestPublicKey"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/btnChangeClientId"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/btnServerTokenRequest"-->
+        <!--android:text="@string/btnServTokenRequestTitle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/btnRequestPublicKey"/>-->
+</RelativeLayout>

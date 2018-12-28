@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">mqttPublisher</string>
+    <string name="RequestCertificateTopic">requestCertificate</string>
+    <string name="clientIdtitle">clientId</string>
+    <string name="clientIdValue">client6</string>
+    <string name="clientKeyTitle">publicKey</string>
+    <string name="privateKey">privateKey</string>
+    <string name="publicKey">publicKey</string>
+
+    <string name="btnRequestPublicKey">Request key</string>
+    <string name="TokenReceiveTopic">topic</string>
+    <string name="recievePublicKeyTopic">clientRecieve</string>
+    <string name="requestPublicKetTpoic">publicKeyRequest</string>
+    <string name="serverPublicKey">serverPublicKey</string>
+    <string name="pulicKeySendFormat">publicKeySendFormat</string>
+    <string name="btnServTokenRequestTitle">Request token</string>
+    <string name="serverTokenRequest">connectionInit</string>
+    <string name="sharedSecret">sharedSecret</string>
+    <string name="serverCredentialsSend">clientCredentials</string>
+    <string name="passwordTitle">password</string>
+
+    <string name="topicReceiveToken">receiveGeneratedToken</string>
+    <string name="tokenSharedPreftitle">token</string>
+    <string name="sharedPrefName">tokenSharedPreferences</string>
+    <string name="tokenTitle">token</string>
+    <string name="responseTokenTopic">responseToken</string>
+    <string name="xacmltitle">requestXacml</string>
+    <string name="taskIdTitle">taskId</string>
+    <string name="algorithmTitle">algorithm</string>
+    <string name="dataTitle">data</string>
+    <string name="toolTitle">tool</string>
+
+
+    <string name="clientId">android</string>
+    <string name="password">android</string>
+</resources>
