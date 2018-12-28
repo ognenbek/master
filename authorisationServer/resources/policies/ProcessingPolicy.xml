@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicyId="ProcessingPolicy"
+          RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:permit-overrides" Version="1.0"><Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">process</AttributeValue>
+<AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId= "actionId" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit" RuleId="B-can-Process">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">B</AttributeValue>
+<AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" AttributeId= "roleId" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Condition>
+<Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and"><Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-less-than">
+<Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+<AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" AttributeId= "environmentId" DataType="http://www.w3.org/2001/XMLSchema#integer" MustBePresent="false"/>
+</Apply><AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+</Apply>
+<Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-greater-than">
+<Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+<AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" AttributeId= "environmentId" DataType="http://www.w3.org/2001/XMLSchema#integer" MustBePresent="false"/>
+</Apply><AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">5</AttributeValue>
+</Apply>
+</Apply>
+</Condition>
+<AdviceExpressions><AdviceExpression AdviceId="urn:notifyUsers" AppliesTo="Permit">
+<AttributeAssignmentExpression AttributeId="urn:notification:message" Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"><AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">You can acquire</AttributeValue>
+</AttributeAssignmentExpression>
+</AdviceExpression>
+</AdviceExpressions>
+</Rule>
+<Rule RuleId="end-rule" Effect="Deny"><AdviceExpressions><AdviceExpression AdviceId="urn:notifyUsers" AppliesTo="Deny">
+<AttributeAssignmentExpression AttributeId="urn:notification:message" Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"><AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">you can not acquire</AttributeValue>
+</AttributeAssignmentExpression>
+</AdviceExpression>
+</AdviceExpressions>
+</Rule></Policy>

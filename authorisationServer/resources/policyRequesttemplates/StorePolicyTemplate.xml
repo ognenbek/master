@@ -1,0 +1,17 @@
+<Request xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" CombinedDecision="false" ReturnPolicyIdList="false">
+<Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment">
+<Attribute AttributeId="environmentId" IncludeInResult="false">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">0</AttributeValue>
+</Attribute>
+</Attributes>
+<Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">
+<Attribute AttributeId="roleId" IncludeInResult="false">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">String</AttributeValue>
+</Attribute>
+</Attributes>
+<Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action">
+<Attribute AttributeId="actionId" IncludeInResult="false">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">String</AttributeValue>
+</Attribute>
+</Attributes>
+</Request>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ogo_b/Desktop/xacmlLibraries/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ogo_b/Desktop/xacmlLibraries/org.wso2.balana.utils-1.1.11-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ogo_b/Desktop/xacmlLibraries/org.wso2.balana-1.1.11-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ogo_b/Desktop/xacmlLibraries/xercesImpl-2.8.1.wso2v2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ogo_b/eclipse/libraries/keystoreCertificateCreation.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/JUnit/junit-4.10.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
